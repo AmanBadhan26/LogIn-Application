@@ -5,56 +5,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
+
+
 
 
     <TextView
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginRight="16dp"
-        android:orientation="vertical"
-        android:text="@string/login_title"
-        android:textSize="42sp" />
-
-    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="@string/login_title"
+        android:textSize="42sp"
+        />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
         android:hint="@string/login_username"
         android:textSize="26sp"
         />
     <EditText
+        android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/login_password"
-        android:layout_marginLeft="1dp"
+        android:layout_gravity="left"
         android:layout_marginTop="16dp"
         android:textSize="26sp"
         android:inputType="textPassword"
         />
     <TextView
+        android:id="@+id/tvForgot_password"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="270dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_gravity="center"
         android:text="@string/forgot_password"
         android:textColor="#26428b"
+
         />
 
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/purple_500"
+        android:gravity="center"
         android:text="@string/login_title"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="-150dp"
-
-
+        tools:ignore="DuplicateSpeakableTextCheck"
         />
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:gravity="bottom|center"
+
+        android:text="@string/not_member"
+        />
+
+
 
 </LinearLayout>

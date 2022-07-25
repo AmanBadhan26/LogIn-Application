@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ForgotPassActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/confused_user"
+        android:paddingBottom="100dp"
+        android:scaleType="center"
+        android:contentDescription="TODO" />
+
+    <EditText
+        android:id="@+id/forgot_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_username"
+        android:gravity="start"
+        android:paddingBottom="20dp"
+        />
+    <EditText
+        android:id="@+id/forgot_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:gravity="start"
+        android:paddingBottom="20dp"
+
+
+        />
+    <EditText
+        android:id="@+id/forgot_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        android:gravity="start"
+        android:digits="1234567890"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:paddingBottom="20dp"
+        />
+        <Button
+            android:id="@+id/forgot_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forgotPass_button"
+
+            />
+
+
+
+</LinearLayout>

@@ -4,4 +4,25 @@
     <string name="login_username">Username</string>
     <string name="login_password">Password</string>
     <string name="forgot_password">Forgot Password?</string>
+    <string name="empty_username">Please enter a username</string>
+    <string name="empty_password">This Field cannot be Empty</string>
+    <string name="short_pass">A password must include at least 6 characters</string>
+    <string name="upcoming_feature">This feature will be implemented soon</string>
+    <string name="loggedIn">Logged In Successfully</string>
+    <string name="email">Please enter your email</string>
+    <string name="phone">Enter your Mobile Number</string>
+    <string name="forgotPass_button">Submit</string>
+    <string name="empty_email">Please enter an Email ID</string>
+    <string name="empty_mobile">Mobile number is required to send an OTP</string>
+    <string name="report_submitted">Your Forgot Password report has been submitted</string>
+    <string name="invalid_mobile">Please enter a valid Mobile Number</string>
+    <string name="not_member">Not a member? SignUp here!</string>
+    <string name="signup">SignUp Page</string>
+    <string name="signup_firstname">First Name</string>
+    <string name="signup_middleName">Middle Name (Optional)</string>
+    <string name="signup_lastName">Last Name</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_other">Other (Please Specify)</string>
+    <string name="signup_button">SignUp</string>
 </resources>
