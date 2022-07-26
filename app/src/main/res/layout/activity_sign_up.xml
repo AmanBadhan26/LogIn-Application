@@ -86,10 +86,6 @@
         android:layout_height="wrap_content"
         android:visibility="gone"
         android:hint="@string/specify_gender"
-
-
-
-
         />
 
     <Button
@@ -99,6 +95,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
         android:text="@string/signup_button" />
+
 
 
 </LinearLayout>

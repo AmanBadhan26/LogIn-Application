@@ -39,14 +39,7 @@ class SignUpActivity : AppCompatActivity() {
             else if(etSignup_lastname.text.isNullOrEmpty()){
                 etSignup_lastname.error= resources.getString(R.string.empty_lastname)
             }
-            rgGender.setOnClickListener{
-                if(rbGender_other.isChecked){
-                    etGender_other.visibility= View.VISIBLE
-                }
-                else{
-                    etGender_other.visibility= View.GONE
-                }
-            }
+            
         }
     }
 }
