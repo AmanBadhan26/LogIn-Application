@@ -3,10 +3,7 @@ package com.example.loginpage
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.RadioButton
-import android.widget.RadioGroup
+import android.widget.*
 
 class SignUpActivity : AppCompatActivity() {
     lateinit var etSignup_firstname: EditText
@@ -32,6 +29,18 @@ class SignUpActivity : AppCompatActivity() {
         etGender_other=findViewById(R.id.etOther_gender)
         btnSignup=findViewById(R.id.btnSignup)
 
+
+        rgGender.setOnCheckedChangeListener { radioGroup, id -> if(id==R.id.rbOther_gender)
+         {
+            etGender_other.visibility= View.VISIBLE
+             }
+
+        else {
+            etGender_other.visibility= View.GONE
+            }
+
+        }
+
         btnSignup.setOnClickListener{
             if (etSignup_firstname.text.isNullOrEmpty()){
                 etSignup_firstname.error= resources.getString(R.string.empty_username)
@@ -39,7 +48,21 @@ class SignUpActivity : AppCompatActivity() {
             else if(etSignup_lastname.text.isNullOrEmpty()){
                 etSignup_lastname.error= resources.getString(R.string.empty_lastname)
             }
-            
+            else if(rgGender.checkedRadioButtonId==-1){
+                Toast.makeText(this, "Please select a gender", Toast.LENGTH_SHORT).show()
+            }
+            else if(rbGender_other.isChecked && etGender_other.text.isNullOrEmpty()){
+                etGender_other.error= resources.getString(R.string.SpecifyGender)
+            }
+
+            else
+            {
+                Toast.makeText(this, "Signup Successful", Toast.LENGTH_SHORT).show()
+
+              }
+
+
         }
+
     }
 }
