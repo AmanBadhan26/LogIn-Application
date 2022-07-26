@@ -51,24 +51,28 @@
 
     <RadioGroup
 
+        android:id="@+id/rgGender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="100dp">
+        >
 
         <RadioButton
+            android:id="@+id/rbMale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/gender_male" />
 
         <RadioButton
+            android:id="@+id/rbFemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/gender_female" />
 
         <RadioButton
+            android:id="@+id/rbOther_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -76,7 +80,20 @@
 
     </RadioGroup>
 
+    <EditText
+        android:id="@+id/etOther_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="@string/specify_gender"
+
+
+
+
+        />
+
     <Button
+        android:id="@+id/btnSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
