@@ -87,6 +87,12 @@
         android:visibility="gone"
         android:hint="@string/specify_gender"
         />
+    <EditText
+        android:id="@+id/etSignup_pass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:hint="@string/signup_pass"/>
 
     <Button
         android:id="@+id/btnSignup"
