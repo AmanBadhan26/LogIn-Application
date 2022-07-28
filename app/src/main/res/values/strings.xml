@@ -28,4 +28,5 @@
     <string name="empty_lastname">This field cannot be empty</string>
     <string name="specify_gender">Please specify your gender</string>
     <string name="SpecifyGender">Please specify your gender</string>
+    <string name="signup_pass">Password</string>
 </resources>
